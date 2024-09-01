@@ -1,72 +1,95 @@
-.bookingFormWrapper {
-  display: flex;
-  flex-direction: column;
-  width: 641px;
-  padding: 43px 57px;
-  border: solid var(--main-gray-light-color);
+/* form */
+.formDetails {
+  width: 50%;
+  padding: 44px;
+  border: 1px solid rgb(218, 221, 225);
   border-radius: 10px;
 }
+.h3_form {
+  color: rgb(16, 24, 40);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0;
+  margin-bottom: 8px;
+}
+.p__form {
+  color: rgb(71, 84, 103);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+  margin-bottom: 24px;
+}
+.inputForm,
+.textarea {
+  width: 100%;
+  border-radius: 12px;
+  /* Inputs */
+  background: rgb(247, 247, 247);
+  padding: 18px;
+  color: rgb(108, 113, 123);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0;
+  outline: none;
+  border: transparent;
+  transition: all 0.3s ease;
+}
+.textarea {
+  resize: none;
+  height: 118px;
+  margin-bottom: 24px;
+}
+.inputForm:hover,
+.inputForm:focus,
+.textarea:hover,
+.textarea:focus {
+  color: rgb(16, 24, 40);
+  border-color: #dc3545;
+  box-shadow: 0 0 8px rgba(220, 53, 69, 0.5);
+}
 
-.formContainer {
+.formByUser {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 14px;
 }
 
-.titleForm {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-  margin-bottom: 7px;
-}
-
-.formDescription {
-  color: var(--main-gray-color);
-  margin-bottom: 23px;
-}
-
-.input {
+.formBtn {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 200px;
+  background: rgb(228, 72, 72);
+  padding: 16px 60px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.05em;
+  box-shadow: 0 0 0 0 rgb(224, 87, 87);
+  transition: background 300ms ease-in;
   border: none;
-  border-radius: 12px;
-  padding: 18px;
-  width: 100%;
-  background-color: var(--main-inputs-color);
-  outline: transparent;
-  outline-offset: 4px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--main-black-color);
 }
 
-.commentInput {
-  width: 100%;
-  height: 118px;
-  border: none;
-  border-radius: 12px;
-  background-color: var(--main-inputs-color);
-  padding: 18px;
-  outline: transparent;
-  outline-offset: 4px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--main-black-color);
-  resize: none;
-  margin-bottom: 10px;
+.formBtn:hover {
+  background: rgb(213, 57, 57);
 }
-
-.input::placeholder,
-.commentInput::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--main-gray-color);
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 20px rgba(5, 255, 138, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 246, 131, 0);
+  }
 }
-
 .error {
-  color: var(--main-button-hover-color);
-  font-size: 14px;
-  margin-top: -12px;
+  color: red;
 }
