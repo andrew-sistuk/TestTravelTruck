@@ -1,0 +1,39 @@
+.aboutCamperWrapper {
+  margin-bottom: 60px;
+}
+
+.camperName {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  margin-bottom: 8px;
+}
+
+.ratingLocationContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.ratingWrapper,
+.locationWrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.starIcon {
+  fill: var(--main-rating-color);
+}
+
+.mapIcon {
+  fill: var(--main-black-color);
+}
+
+.priceValue {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  margin-bottom: 28px;
+}

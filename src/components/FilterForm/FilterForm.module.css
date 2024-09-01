@@ -1,0 +1,121 @@
+.formContainer {
+  max-width: 360px;
+  position: relative;
+}
+
+.locationLable {
+  display: block;
+  color: var(--main-gray-color);
+  margin-bottom: 8px;
+}
+
+.locationInput {
+  border: none;
+  border-radius: 12px;
+  padding: 16px 16px 16px 48px;
+  width: 100%;
+  background-color: var(--main-inputs-color);
+  outline: transparent;
+  outline-offset: 4px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-black-color);
+}
+
+.mapIcon {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  z-index: 999;
+  fill: var(--main-gray-color);
+}
+
+.icon {
+  fill: var(--main-black-color);
+  transition: fill var(--animation);
+}
+
+.locationInput::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-gray-color);
+}
+
+.locationInput:focus + .mapIcon,
+.locationInput:active + .mapIcon {
+  fill: var(--main-black-color);
+}
+
+.filtersTitlle {
+  font-weight: 500;
+  color: var(--main-text-color);
+  margin-bottom: 32px;
+}
+
+.searchParamsTitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--main-gray-light-color);
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.custom {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--main-gray-light-color);
+  border-radius: 12px;
+  padding: 16px;
+  width: 112px;
+  height: 96px;
+  cursor: pointer;
+  transition: border-color var(--animation);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+
+.visuallyHidden:checked + .custom {
+  border-color: var(--main-button-color);
+}
+
+.equipmentList {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 12px;
+  flex-direction: row;
+  row-gap: 8px;
+  margin-bottom: 32px;
+}
+
+.typeList {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 12px;
+  flex-direction: row;
+  row-gap: 8px;
+  margin-bottom: 40px;
+}
+
+.special {
+  padding: 4px 16px;
+}

@@ -1,0 +1,9 @@
+.categoriesList {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: start;
+  max-width: 524px;
+  margin-bottom: 24px;
+}

@@ -1,0 +1,30 @@
+.addInformationList {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 24px;
+  margin-bottom: 44px;
+  border-bottom: 1px solid var(--main-gray-light-color);
+}
+
+.default {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--main-black-color);
+  text-decoration: none;
+}
+
+.active {
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -28px;
+  width: 100%;
+  height: 5px;
+  background-color: var(--main-button-color);
+}

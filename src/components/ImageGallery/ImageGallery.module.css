@@ -1,0 +1,6 @@
+.galleryList {
+  display: flex;
+  gap: 48px;
+  justify-content: start;
+  margin-bottom: 28px;
+}

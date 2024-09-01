@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter/Inter-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter/Inter-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root {
+  --main-black-color: #101828;
+  --main-text-color: #475467;
+  --main-gray-color: #6c717b;
+  --main-button-color: #e44848;
+  --main-button-hover-color: #d84343;
+  --main-rating-color: #ffc531;
+  --main-gray-light-color: #dadde1;
+  --main-badges-color: #f2f4f7;
+  --main-inputs-color: #f7f7f7;
+  --main-white-color: #ffffff;
+
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  background-color: var(--main-white-color);
+  color: var(--main-black-color);
+
+  --animation: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0, auto;
+  min-width: 320px;
+  min-height: 100vh;
+  align-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}

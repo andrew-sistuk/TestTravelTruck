@@ -1,0 +1,78 @@
+.camperCardContainer {
+  display: flex;
+  gap: 24px;
+  border: 1px solid var(--main-gray-light-color);
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.camperImage {
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.camperName,
+.priceValue {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+}
+
+.priceContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.isFavoriteBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.isFavoriteIcon,
+.mapIcon {
+  fill: var(--main-black-color);
+  transition: fill var(--animation);
+}
+
+.isFavoriteIconRed {
+  fill: var(--main-button-color);
+}
+
+.starIcon {
+  fill: var(--main-rating-color);
+}
+
+.ratingLocationContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.ratingWrapper,
+.locationWrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 524px;
+  margin-bottom: 24px;
+}

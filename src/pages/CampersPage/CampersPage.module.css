@@ -1,0 +1,11 @@
+.catalog {
+  padding-top: 48px;
+  padding-bottom: 52px;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0px 64px;
+  display: flex;
+  gap: 64px;
+}

@@ -1,0 +1,5 @@
+.errorMessage {
+  color: var(--main-button-color);
+  width: 100%;
+  text-align: center;
+}

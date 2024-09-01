@@ -1,0 +1,16 @@
+.camper {
+  padding-top: 48px;
+  padding-bottom: 80px;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0px 64px;
+  display: flex;
+  flex-direction: column;
+}
+
+.secondContainer {
+  display: flex;
+  justify-content: space-between;
+}

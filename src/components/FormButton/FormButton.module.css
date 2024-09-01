@@ -1,0 +1,20 @@
+.formBtn {
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: var(--main-white-color);
+  border: none;
+  border-radius: 56px;
+  padding: 16px 48px;
+  align-items: center;
+  justify-content: center;
+  width: 166px;
+  background-color: var(--main-button-color);
+  transition: background-color var(--animation);
+}
+
+.formBtn:hover {
+  background-color: var(--main-button-hover-color);
+}
