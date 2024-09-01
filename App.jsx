@@ -1,15 +1,15 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import { lazy } from "react";
-import Layout from "../Layout/Layout.jsx";
+import Layout from "./src/components/Layout/Layout.jsx";
 
 import "./App.css";
 
-const HomePage = lazy(() => import("../../pages/HomePage/HomePage.jsx"));
-const CampersPage = lazy(() => import("../../pages/CampersPage/CampersPage.jsx"));
-const CamperDetailsPage = lazy(() => import("../../pages/CamperDetailsPage/CamperDetailsPage.jsx"));
-const Features = lazy(() => import("../Features/Features.jsx"));
-const Reviews = lazy(() => import("../Reviews/Reviews.jsx"));
-const NotFoundPage = lazy(() => import("../../pages/NotFoundPage/NotFoundPage.jsx"));
+const HomePage = lazy(() => import("./src/pages/HomePage/HomePage.jsx"));
+const CampersPage = lazy(() => import("./src/pages/CampersPage/CampersPage.jsx"));
+const CamperDetailsPage = lazy(() => import("./src/pages/CamperDetailsPage/CamperDetailsPage.jsx"));
+const Features = lazy(() => import("./src/components/Features/Features.jsx"));
+const Reviews = lazy(() => import("./src/components/Reviews/Reviews.jsx"));
+const NotFoundPage = lazy(() => import("./src/pages/NotFoundPage/NotFoundPage.jsx"));
 
 export default function App() {
   return (
